@@ -1,0 +1,1 @@
+bool Simple( int number);
