@@ -15,7 +15,7 @@ int main(){
     char part[256];
     int q = 0;
 
-    if (read(STDIN_FILENO, &part, sizeof(char)) == -1){
+    if (read(STDIN_FILENO, &part, sizeof(part)) == -1){
         perror("Reading error. \n");
         exit(-1);
     }
