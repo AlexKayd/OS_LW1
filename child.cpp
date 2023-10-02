@@ -1,4 +1,3 @@
-#include <iostream>
 #include <unistd.h>
 #include <string>
 #include <fstream>
@@ -55,7 +54,7 @@ int main(){
         }
     }
     // Запись составленных чисел в поток вывода (связан с fd[1] pipe1)
-    for (int q = 0; q < r - 2; q++){
+    for (int q = 0; q < r - size; q++){
         write(STDOUT_FILENO, &result[q], sizeof(result[q]));
     }
     exit(0);
